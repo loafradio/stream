@@ -4,6 +4,13 @@
 <head style="display:block;">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+  <script src='main.js'></script>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <title>Loaf Radio</title>
 
   
@@ -75,6 +82,16 @@
     background: rgba(0,0,0,.99);
     color: #fff;
   }
+
+  #pause-button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color:white
+  }
   
   @keyframes fadein {
     0% {
@@ -94,6 +111,8 @@
   <div class="text">
     <h1 style="animation-delay: .1s;">Loaf Radio&nbsp;</h1>
                               <p style="animation-delay: 0.2s;">every weekday @ 9pm EST</p>
+                              <p style="animation-delay: 0.2s;">
+                                <button onclick="toggleAudio()" id='pause-button'></button></p>
                                 <p style="animation-delay: 0.3s;">M&nbsp; &nbsp;SHOW w/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; T&nbsp; &nbsp;SHOW w/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; W&nbsp; &nbsp;SHOW w/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Th&nbsp; SHOW w/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F&nbsp; &nbsp;SHOW w/</p>
                                 <p style="animation-delay: 0.4s;">*tune in for a slice of life*</p>
                                                                                                                                                                                       </div>
